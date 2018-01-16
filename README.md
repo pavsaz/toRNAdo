@@ -1,14 +1,22 @@
+**toRNAdo**
+
 toRNAdo is a script for identification of non-coding RNAs (ncRNAs) from bacterial RNA-Seq data. It identifies both antisense and intergenic ncRNAs as well as those that have both antisense and intergenic properties - "mixed" type. In addition, toRNAdo can also be used to identify 5' and 3' untranslated regions (UTRs) as well as regions that belong to operons.
+
+**Preparing for toRNAdo**
 
 Prior to running toRNAdo, you must generate appropriate input files with Prepare_for_toRNAdo script. It is found at https://github.com/pavsaz/Prepare_for_toRNAdo
 
 Prepare_for_toRNAdo script will generate a directory for each of your sorted bam files. You then need to run toRNAdo on each of these new directories.
 
-Usage: python toRNAdo.py directory
+**Usage**
+
+python toRNAdo.py directory
 
 IMPORTANT: When you specify directory, do not put a forward slash at the end.
 
-Output: Within each of the directories there will now be a new directory named "toRNAdo_output". Within this directory there will be multiple files. Explanation below:
+**Output**
+
+Within each of the directories there will now be a new directory named "toRNAdo_output". Within this directory there will be multiple files. Explanation below:
 
 1) .wig files are generated for each type of RNA feature identified. These files include toRNAdo-normalised coverage of each nucleotide in a feature.
   a) Separate files are produced for plus and minus strands.
@@ -17,6 +25,6 @@ Output: Within each of the directories there will now be a new directory named "
 
 2) .csv file containing a summary of all identified "filtered" antisense, intergenic and mixed ncRNAs. The "Peak height" column shows the toRNAdo-normalised expression value for a nucleotide with the highest read coverage within the ncRNA.
 
-Citation:
+**Citation**
 
 If you have used this code in your research, then feel free to cite this article: https://doi.org/10.1093/femsle/fny004
