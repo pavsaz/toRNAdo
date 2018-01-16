@@ -16,3 +16,7 @@ Output: Within each of the directories there will now be a new directory named "
   c) All files can be imported as a "User plot" to Artemis genome browser and thus visualised.
 
 2) .csv file containing a summary of all identified "filtered" antisense, intergenic and mixed ncRNAs. The "Peak height" column shows the toRNAdo-normalised expression value for a nucleotide with the highest read coverage within the ncRNA.
+
+Citation:
+
+If you have used this code in your research, then feel free to cite this article: 10.1093/femsle/fny004 
